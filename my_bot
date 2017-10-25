@@ -67,3 +67,5 @@ def heart(message):
                     bot.send_message(message.chat.id, text = "Discriminant = 0. x1 = x2 = " + str(x))
                 else:
                     bot.send_message(message.chat.id, text = "Discriminant = " + str(d) + ".")
+                    
+bot.polling()
