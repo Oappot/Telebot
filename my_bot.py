@@ -46,13 +46,13 @@ def biqueq2(message):
         bot.send_message(message.chat.id, text = "Discriminant = " + str(d) + ".")
 
 
-@bot.message_handler(commands = ['factorial']):
+@bot.message_handler(commands = ['factorial'])
 def factorial(message):
     
     bot.send_message(message.chat.id, text = "Your number?")
     factorial2(message.text)
     
-@bot.message_handler(commands = ['queq']):
+@bot.message_handler(commands = ['queq'])
 def queq1(message):
     
     bot.send_message(message.chat.id, text = "Put coefficient a")
@@ -63,7 +63,7 @@ def queq1(message):
     c = int(message.text)
     queq2(message.text)
 
-@bot.message_handler(commands = ['biqueq']):
+@bot.message_handler(commands = ['biqueq'])
 def biqueq1(message):
     
     bot.send_message(message.chat.id, text = "Put coefficient a")
